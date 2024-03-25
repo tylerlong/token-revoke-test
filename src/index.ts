@@ -26,7 +26,7 @@ const main = async () => {
   await rc.refresh();
   await rc.restapi().account().extension().get();
   rc.token = token;
-  await waitFor({ interval: 2000 });
+  // await waitFor({ interval: 2000 });
   await rc.refresh();
   // const r = await rc.restapi().account().extension().get();
   // console.log(r);
